@@ -16,4 +16,8 @@ class sale extends Model
         'hour',
         'product_id'
     ];
+
+    public function product(){
+        return $this->belongsTo(product::class);
+    }
 }
